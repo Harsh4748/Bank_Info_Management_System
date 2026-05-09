@@ -1,0 +1,18 @@
+**** for one click  start **********
+--> package.json
+"scripts": {
+  "server": "node server.js",
+  "client": "npm start --prefix client",
+  "start-all": "concurrently \"npm run server\" \"npm run client\""
+}
+
+-->Batch file banao
+
+@echo off
+cd /d "C:\path\to\your\project" // change path accordind to you
+npm run start-all
+pause
+
+-->Shortcut banao
+start-app.bat par right-click → Create Shortcut
+Us shortcut ko Desktop par daal do
