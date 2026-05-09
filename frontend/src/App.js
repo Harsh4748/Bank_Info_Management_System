@@ -6,9 +6,9 @@ import jsPDF from "jspdf";
 import "jspdf-autotable";
 import "./App.css";
 
-const API = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
-const SHOP_NAME = "Agrawal Mobile Sayan";
-const SHOP_MOBILE = "9714246474";
+const API = process.env.REACT_APP_API_URL;
+const SHOP_NAME = process.env.REACT_APP_SHOP_NAME;
+const SHOP_MOBILE = process.env.REACT_APP_SHOP_MOBILE;
 
 export default function App() {
   const [addForm, setAddForm] = useState({

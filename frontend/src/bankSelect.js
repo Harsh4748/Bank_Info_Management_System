@@ -3,10 +3,9 @@
 // import "./App.css";
 // import { mainBranchBanks } from "./banksData";
 
-// const API = "http://localhost:5000/api";
-
-// const SHOP_NAME = "Agrawal Mobile Sayan";
-// const SHOP_MOBILE = "9714246474";
+// const API = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
+// const SHOP_NAME = process.env.REACT_APP_SHOP_NAME || "abc shop";
+// const SHOP_MOBILE = process.env.REACT_APP_SHOP_MOBILE || "1234567890";
 
 // // --- Bank Selector Component ---
 // function BankSelector({ onSelect }) {
